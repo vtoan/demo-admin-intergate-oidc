@@ -51,7 +51,7 @@ export default function Product(props) {
     _parmas.typeId = 0;
     _parmas.sort = null;
     _parmas.query = "";
-    _fetchProducts(1);
+    _fetchProducts();
   };
 
   return (
