@@ -6,7 +6,6 @@ import { signinRedirect } from "../services/authService";
 function ProtectedRoute({ children, component: Component, ...rest }) {
   const user = useSelector((state) => state.auth.user);
   if (!user) signinRedirect();
-
   return user && <Route {...rest} component={Component} />;
 }
 
